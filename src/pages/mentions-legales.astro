@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../config';
+---
+<Base title={`Mentions légales – ${site.name}`} description="Mentions légales du site.">
+  <main class="wrap prose">
+    <h1>Mentions légales</h1>
+    <h2>Éditeur du site</h2>
+    <p>{site.owner}, [statut juridique à compléter, ex. micro-entrepreneur]<br />
+    SIRET : [à compléter]<br />
+    Contact : <a href={`mailto:${site.email}`}>{site.email}</a></p>
+    <h2>Hébergement</h2>
+    <p>GitHub, Inc., 88 Colin P. Kelly Jr Street, San Francisco, CA 94107, États-Unis (GitHub Pages).</p>
+    <h2>Fichiers et propriété intellectuelle</h2>
+    <p>Les fichiers et plans transmis par les clients restent leur propriété et ne sont utilisés que pour réaliser la commande. Les contenus de ce site sont la propriété de l'éditeur.</p>
+    <h2>Données personnelles</h2>
+    <p>Les informations envoyées par e-mail ne sont utilisées que pour répondre à votre demande et ne sont pas transmises à des tiers.</p>
+  </main>
+</Base>

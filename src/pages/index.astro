@@ -1,0 +1,72 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../config';
+const mail = `mailto:${site.email}?subject=${encodeURIComponent('Demande de pièce 3D')}`;
+---
+<Base
+  title={`${site.name} – Conception et impression 3D sur mesure`}
+  description="Conception et impression 3D sur mesure de supports, boîtiers et prototypes, pour l'électronique, la mécatronique et d'autres domaines."
+>
+  <main>
+    <div class="wrap hero">
+      <div>
+        <h1>Des pièces 3D conçues pour votre projet.</h1>
+        <p>Je conçois et j'imprime des supports, des boîtiers et des prototypes sur mesure, pour l'électronique, la mécatronique et bien d'autres domaines.</p>
+        <a class="btn" href={mail}>Décrire ma pièce</a>
+        <p class="note">Le service ouvre prochainement. Écrivez-moi pour discuter d'un projet ou être prévenu.</p>
+      </div>
+      <div class="layers" role="img" aria-label="Illustration de couches d'impression 3D"></div>
+    </div>
+
+    <section id="services"><div class="wrap">
+      <h2>Ce que je fais</h2>
+      <div class="rows">
+        <div><h3>Conception</h3><p>Je dessine la pièce en CAO à partir de votre besoin, de vos cotes ou d'un simple croquis.</p></div>
+        <div><h3>Impression</h3><p>J'imprime en PLA ou en PETG, avec un ébavurage soigné des pièces.</p></div>
+        <div><h3>Reprise de pièce</h3><p>J'adapte ou je reproduis une pièce existante, cassée ou introuvable.</p></div>
+      </div>
+      <p class="aside">Je ne réalise ni circuits imprimés ni électronique : je fabrique le support, le boîtier ou la fixation qui les accueille.</p>
+    </div></section>
+
+    <section id="domaines"><div class="wrap">
+      <h2>Pour quels projets</h2>
+      <div class="rows">
+        <div><h3>Électronique et mécatronique</h3><p>Boîtiers pour cartes, supports de capteurs, fixations de modules, pièces d'intégration.</p></div>
+        <div><h3>Prototypage</h3><p>Pièces d'essai, maquettes fonctionnelles et ajustements rapides avant une version définitive.</p></div>
+        <div><h3>Projets étudiants et makers</h3><p>Pièces uniques ou petites séries pour des projets personnels, scolaires ou associatifs.</p></div>
+        <div><h3>Autres usages</h3><p>Pièces de remplacement, accessoires et supports en tout genre. Si vous hésitez, posez la question.</p></div>
+      </div>
+    </div></section>
+
+    <section id="methode"><div class="wrap">
+      <h2>Comment ça marche</h2>
+      <ol class="steps">
+        <li><h3>Vous décrivez</h3><p>Usage, dimensions, quantité, délai souhaité.</p></li>
+        <li><h3>Je chiffre</h3><p>Vous recevez un devis avant toute fabrication.</p></li>
+        <li><h3>Je conçois</h3><p>Je valide la pièce avec vous avant l'impression.</p></li>
+        <li><h3>J'imprime et je livre</h3><p>Vous recevez la pièce prête à monter.</p></li>
+      </ol>
+    </div></section>
+
+    <section id="matieres"><div class="wrap">
+      <h2>Matières et tarifs</h2>
+      <dl class="rows">
+        <div><dt><h3>PLA</h3></dt><dd>Rigide et facile à imprimer. Pour les prototypes et l'usage en intérieur.</dd></div>
+        <div><dt><h3>PETG</h3></dt><dd>Plus résistant aux chocs et à l'humidité. Pour les pièces d'usage courant.</dd></div>
+        <div><dt><h3>ABS / ASA</h3></dt><dd>Sur demande, selon faisabilité, pour les pièces exposées à la chaleur ou à l'extérieur.</dd></div>
+        <div><dt><h3>Tarifs</h3></dt><dd>Sur devis, selon le temps de conception, la matière et le temps d'impression.</dd></div>
+      </dl>
+    </div></section>
+
+    <section id="realisations"><div class="wrap">
+      <h2>Réalisations</h2>
+      <div class="empty">Les premières réalisations seront présentées ici. En attendant, parlez-moi de votre projet.</div>
+    </div></section>
+
+    <section id="contact"><div class="wrap">
+      <h2>Parlez-moi de votre projet</h2>
+      <p class="aside" style="margin-top:0">Indiquez l'usage de la pièce, ses dimensions, la quantité et le délai souhaité. Un croquis ou une photo aide beaucoup.</p>
+      <a class="btn" href={mail}>Écrire à {site.email}</a>
+    </div></section>
+  </main>
+</Base>
