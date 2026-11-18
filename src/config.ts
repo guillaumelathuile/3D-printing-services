@@ -1,6 +1,6 @@
 // À modifier ici : utilisé sur tout le site.
 export const site = {
   name: 'Lathuile 3D',
-  email: 'contact@exemple.fr', // à remplacer par l'adresse e-mail dédiée
+  email: 'lignine.devineur-7p@icloud.com',
   owner: 'Guillaume Lathuile',
 };
