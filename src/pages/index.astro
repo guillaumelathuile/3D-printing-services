@@ -5,13 +5,13 @@ const mail = `mailto:${site.email}?subject=${encodeURIComponent('Demande de piè
 ---
 <Base
   title={`${site.name} – Conception et impression 3D sur mesure`}
-  description="Conception et impression 3D sur mesure de supports, boîtiers et prototypes, pour l'électronique, la mécatronique et d'autres domaines."
+  description="Conception et impression 3D sur mesure : pièces utilitaires, prototypes, pièces de remplacement, avec une spécialité en électronique et mécatronique."
 >
   <main>
     <div class="wrap hero">
       <div>
-        <h1>Des pièces 3D conçues pour votre projet.</h1>
-        <p>Je conçois et j'imprime des supports, des boîtiers et des prototypes sur mesure, pour l'électronique, la mécatronique et bien d'autres domaines.</p>
+        <h1>Des pièces 3D conçues pour vos projets.</h1>
+        <p>Une pièce à créer, à reproduire ou à réparer ? Je la conçois et je l'imprime sur mesure, pour un usage quotidien comme pour un projet technique, avec une vraie spécialité en électronique et mécatronique.</p>
         <a class="btn" href={mail}>Décrire ma pièce</a>
         <p class="note">Le service ouvre prochainement. Écrivez-moi pour discuter d'un projet ou être prévenu.</p>
       </div>
@@ -21,20 +21,33 @@ const mail = `mailto:${site.email}?subject=${encodeURIComponent('Demande de piè
     <section id="services"><div class="wrap">
       <h2>Ce que je fais</h2>
       <div class="rows">
-        <div><h3>Conception</h3><p>Je dessine la pièce en CAO à partir de votre besoin, de vos cotes ou d'un simple croquis.</p></div>
+        <div><h3>Conception</h3><p>Je dessine la pièce en CAO à partir de votre besoin, de vos cotes, d'une photo ou d'un simple croquis.</p></div>
         <div><h3>Impression</h3><p>J'imprime en PLA et PETG, ou en matériaux techniques (ABS, ASA, TPU, polycarbonate, fibre de carbone) quand la pièce l'exige, avec un ébavurage soigné.</p></div>
         <div><h3>Reprise de pièce</h3><p>J'adapte ou je reproduis une pièce existante, cassée ou introuvable.</p></div>
       </div>
-      <p class="aside">Je ne réalise ni circuits imprimés ni électronique : je fabrique le support, le boîtier ou la fixation qui les accueille.</p>
     </div></section>
 
     <section id="domaines"><div class="wrap">
       <h2>Pour quels projets</h2>
       <div class="rows">
-        <div><h3>Électronique et mécatronique</h3><p>Boîtiers pour cartes, supports de capteurs, fixations de modules, pièces d'intégration.</p></div>
-        <div><h3>Prototypage</h3><p>Pièces d'essai, maquettes fonctionnelles et ajustements rapides avant une version définitive.</p></div>
+        <div><h3>Pièces utilitaires et de remplacement</h3><p>Clips, supports, poignées, fixations, accessoires : la petite pièce introuvable qui bloque tout le reste.</p></div>
+        <div><h3>Prototypes et maquettes</h3><p>Pièces d'essai, maquettes fonctionnelles et ajustements rapides avant une version définitive.</p></div>
         <div><h3>Projets étudiants et makers</h3><p>Pièces uniques ou petites séries pour des projets personnels, scolaires ou associatifs.</p></div>
-        <div><h3>Autres usages</h3><p>Pièces de remplacement, accessoires et supports en tout genre. Si vous hésitez, posez la question.</p></div>
+        <div><h3>Maison, loisirs et passions</h3><p>Modélisme, jeux, rangement, décoration fonctionnelle, cadeaux sur mesure. Si vous hésitez, posez la question.</p></div>
+      </div>
+      <div class="focus">
+        <h3>Ma spécialité : l'électronique et la mécatronique</h3>
+        <p>Boîtiers pour cartes, supports de capteurs, fixations de modules, pièces d'intégration : je pense le montage, l'accès aux connecteurs, le passage des câbles et la ventilation dès la conception. Je fabrique le boîtier ou le support qui accueille vos circuits, mais je ne réalise pas les circuits eux-mêmes.</p>
+      </div>
+    </div></section>
+
+    <section id="materiel"><div class="wrap">
+      <h2>Un matériel de qualité</h2>
+      <p class="aside" style="margin-top:0;margin-bottom:2rem">Les pièces sont imprimées sur une Bambu Lab X2D équipée d'un AMS 2 Pro : une imprimante fermée à double buse, pensée pour des résultats réguliers.</p>
+      <div class="rows">
+        <div><h3>Solides</h3><p>Une chambre fermée et chauffée permet d'imprimer des matériaux techniques avec une bonne tenue des pièces.</p></div>
+        <div><h3>Précises</h3><p>Calibration automatique et réglages adaptés à chaque pièce, pour des cotes respectées et des assemblages qui s'ajustent.</p></div>
+        <div><h3>Soignées</h3><p>Des surfaces propres, un résultat constant d'une pièce à l'autre, et la possibilité de mêler plusieurs couleurs ou matières dans une même pièce.</p></div>
       </div>
     </div></section>
 
@@ -73,3 +86,14 @@ const mail = `mailto:${site.email}?subject=${encodeURIComponent('Demande de piè
     </div></section>
   </main>
 </Base>
+
+<style>
+  .focus {
+    margin-top: 2rem;
+    padding: 1.25rem 1.5rem;
+    border-left: 4px solid var(--accent);
+    background: rgba(37, 64, 217, 0.06);
+    border-radius: 0 6px 6px 0;
+  }
+  .focus p { margin: 0.5rem 0 0; color: var(--muted); max-width: 44rem; }
+</style>
